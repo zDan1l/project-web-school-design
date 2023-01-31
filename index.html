@@ -35,10 +35,10 @@
 
     <!-- start logo -->
     <div class="container">
-        <div class="d-flex flex-row justify-content-between py-2">
+        <div class="justify-content-between py-2 my-4">
             <div class="logo-sekolah d-flex flex-row gap-2 pt-2">
                 <img src="img/logo-kemendikbud.png" alt="
-                logo-sekolah" width="58" height="55">
+                logo-sekolah" width="60" height="55">
                 <div class="d-flex flex-column">
                     <h5 class="fw-bold">Sekolah Dasar Insan Bangsa</h5>
                     <p>Berprestasi, Bertaqwa dan Berkarakter Budi Luhur</p>
@@ -58,16 +58,22 @@
     <nav class="menu">
         <div class="container">
             <div class="py-1 flex justify-content-between">
-                <div class="menu-navbar mt-3">
+                <div class="menu-navbar my-4">
                     <nav>
-                        <ul class="flex">
-                            <li><a href="" class="nav-link ">BERANDA</a></li>
-                            <li><a href="" class="nav-link">INFORMASI</a></li>
-                            <li><a href="" class="nav-link">PROFIL</a></li>
-                            <li><a href="" class="nav-link">BERITA</a></li>
-                            <li><a href="" class="nav-link">KEGIATAN</a></li>
-                            <li><a href="" class="nav-link">PRESTASI</a></li>
-                            <li><a href="" class="nav-link">KONTAK</a></li>
+                        <div class="menu-toggle">
+                            <input type="checkbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="flex-column">
+                                <li><a href="" class="nav-link ">BERANDA</a></li>
+                                <li><a href="" class="nav-link">INFORMASI</a></li>
+                                <li><a href="" class="nav-link">PROFIL</a></li>
+                                <li><a href="" class="nav-link">BERITA</a></li>
+                                <li><a href="" class="nav-link">KEGIATAN</a></li>
+                                <li><a href="" class="nav-link">PRESTASI</a></li>
+                                <li><a href="" class="nav-link">KONTAK</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -82,5 +88,8 @@
         <script>
             feather.replace();
         </script>
+    
+    <!-- script js -->
+    <script src="script.js"></script>
 </body>
 </html>
