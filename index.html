@@ -34,63 +34,126 @@
     <!-- end top -->
 
     <!-- start logo -->
-    <div class="container">
-        <div class="justify-content-between py-2 my-4">
-            <div class="logo-sekolah d-flex flex-row gap-2 pt-2">
-                <img src="img/logo-kemendikbud.png" alt="
-                logo-sekolah" width="60" height="55">
-                <div class="d-flex flex-column">
-                    <h5 class="fw-bold">Sekolah Dasar Insan Bangsa</h5>
-                    <p>Berprestasi, Bertaqwa dan Berkarakter Budi Luhur</p>
+    <div class="logo">
+        <div class="container">
+            <div class="d-lg-flex justify-content-between py-2 my-3">
+                <div class="logo-sekolah d-flex flex-row gap-2 pt-2">
+                    <img src="img/logo-kemendikbud.png" alt="
+                    logo-sekolah" width="60" height="55">
+                    <div class="d-flex flex-column">
+                        <h5 class="fw-bold fs-5">Sekolah Dasar Insan Bangsa</h5>
+                        <p class="fs-6">Berprestasi, Bertaqwa dan Berkarakter Budi Luhur</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <input type="text" class="form-control h-50 my-auto px-2 input-search" placeholder="   Berita, informasi dll" id="colum-search">
+                    <button class="btn p-2 text-center my-auto ms-3" id="input-search"><i data-feather="search" id="search" class="my-auto"></i></button>
                 </div>
             </div>
-            <div class="d-flex flex-row">
-                <input type="text" class="form-control h-50 my-auto px-2 input-search" placeholder="   Berita, informasi dll">
-                <button class="btn p-2 text-center my-auto ms-3" id="input-search"><i data-feather="search" id="search" class="my-auto"></i></button>
-            </div>
         </div>
-        
     </div>
+        
     <!-- end logo -->
 
 
     <!-- navbar -->
-    <nav class="menu">
-        <div class="container">
-            <div class="py-1 flex justify-content-between">
-                <div class="menu-navbar my-4">
-                    <nav>
-                        <div class="menu-toggle">
-                            <input type="checkbox">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <ul class="flex-column">
-                                <li><a href="" class="nav-link ">BERANDA</a></li>
-                                <li>
-                                    <div class="d-flex justify-content-between border-bottom border-1 border-white">
-                                        <a href="" class="nav-link border-0">INFORMASI</a>
-                                        <button class="border-0 bg-transparent" id="btn-sublist"><i data-feather="chevron-down" class="my-auto me-0 text-white"></i></button>
-                                    </div>
-                                       
-                                </li>
-                                <div class="sub-list">
-                                    <li class="ms-4"><a href="" class="nav-link">PENGUMUMAN</a>
+        <nav class="menu">
+            <div class="container">
+                <div class="py-2 flex justify-content-between">
+                    <div class="menu-navbar my-1">
+                        <nav>
+                            <div class="menu-toggle">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul class="flex-column">
+                                    <li><a href="" class="nav-link ">BERANDA</a></li>
+                                    <li class="informasi">
+                                        <div class="d-flex justify-content-between border-bottom border-1 border-white">
+                                            <a href="" class="nav-link border-0" id="informasi">INFORMASI</a>
+                                            <button class="border-0 bg-transparent" id="btn-sublist"><i data-feather="chevron-down" class="my-auto me-0 text-white"></i></button>
+                                        </div> 
+                                        <div class="dropdown">
+                                            <a href="" class="nav-link border-0">INFORMASI <i data-feather="chevron-down"></i></a>
+                                            <div class="dropdown-content border-bottom border-3">
+                                                <a href="" class="nav-link">PENGUMUMAN</a>
+                                                <a href="" class="nav-link">BANTUAN DAN SUPPORT</a>
+                                            </div>
+                                        </div>   
                                     </li>
-                                    <li class="ms-4"><a href="" class="nav-link">BANTUAN DAN SUPPORT</a></li>
-                                </div>
-                                <li><a href="" class="nav-link">PROFIL</a></li>
-                                <li><a href="" class="nav-link">BERITA</a></li>
-                                <li><a href="" class="nav-link">KEGIATAN</a></li>
-                                <li><a href="" class="nav-link">PRESTASI</a></li>
-                                <li><a href="" class="nav-link">KONTAK</a></li>
-                        </ul>
-                    </nav>
+                                    <div class="sub-list">
+                                        <li class="ms-4"><a href="" class="nav-link">PENGUMUMAN</a>
+                                        </li>
+                                        <li class="ms-4"><a href="" class="nav-link">BANTUAN DAN SUPPORT</a></li>
+                                    </div>
+                                    <li><a href="" class="nav-link">PROFIL</a></li>
+                                    <li><a href="" class="nav-link">BERITA</a></li>
+                                    <li><a href="" class="nav-link">KEGIATAN</a></li>
+                                    <li><a href="" class="nav-link">PRESTASI</a></li>
+                                    <li><a href="" class="nav-link">KONTAK</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
+        </nav>
+    <!-- end navbar -->
+
+    <!-- carousel start -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </nav>
+        <div class="carousel-inner" id="hero-carousel">
+          <div class="carousel-item active">
+            <img src="img/hero.jpg" class="d-block w-100" alt="sekolah-nusa-bangsa">
+            <div class="carousel-caption d-none d-md-block">
+                <div id="ppdb">
+                    <div class="px-4 py-5">
+                        <h3>Penerimaan Peserta Didik Baru <br>Tahun Ajaran 2023/2024</h3>
+                        <p class="text-ppdb">Daftar dan jadi bagian dari SD Nusa Insan Bangsa. Semua informasi terkait <br> mekanisme pendaftaran dapat dilihat di website resmi kami</p>
+                        <button class="btn-ppdb btn">Pejalari Lebih Lanjut</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hero.jpg" class="d-block w-100" alt="sekolah-nusa-bangsa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hero.jpg" class="d-block w-100" alt="sekolah-nusa-bangsa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    <!-- carousel end -->
+
+    <!-- sambutan start -->
+        <div class="sambuatan mt-5">
+            <div class="container"></div>
+        </div>
+    <!-- sambutan end -->
+
+    <div class="space"></div>
 
     <!-- script bs -->
       <script src="js/bootstrap.js"></script>

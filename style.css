@@ -1,3 +1,6 @@
+.space{
+    margin: 500px 0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +38,7 @@
     border: 1px solid #848586;
 }
 
+
 /* menu navbar */
 .menu-navbar ul{
     display: none;
@@ -47,7 +51,10 @@
 .menu-navbar nav ul li{
     list-style: none; 
     height: 40px;
-    margin-bottom: 10px;
+   
+}
+.dropdown{
+    display: none;
 }
 .sub-list{
     display: none;
@@ -58,7 +65,7 @@
 .menu-navbar a{
     color: white;  
     box-sizing: border-box;
-    font-size: 17px;
+    font-size: 12px;
     border-bottom: 1px solid #fff;
     padding-left: 0;
 }
@@ -133,9 +140,55 @@
 }
 
 @media(min-width: 900px) {
+    .logo h5{
+        font-size: 1.30rem !important;
+    }
+    .logo p{
+        font-size: 20px;
+    }
+    .menu-navbar a{
+        font-size: 17px;
+    }
     .top{
         display: flex;
     }
+    #colum-search{
+        width: 300px;
+    }
+    #informasi{
+        display: none;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--custom);
+        min-width: 160px;
+        z-index: 1;
+        padding: 18px 0;
+        width: 270px;
+        border-bottom: 4px solid var(--text-combine) !important;
+        border-radius: 5px;
+    }
+    .dropdown-content a {
+        color: #fff;
+        margin: 5px 20px;
+        text-decoration: none;
+        height: 40px;
+        display: block;
+        text-align: start !important;
+        box-sizing: border-box;
+    }
+    .dropdown a i:hover{
+        color: var(--text-gold) !important;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
     /* menu toglle */
     .menu-toggle{
         display: none;
@@ -151,13 +204,53 @@
         padding-left: 12px !important;
         padding-right: 12px !important;
     }
-    .menu-navbar ul li a:hover{
-        border-bottom: 1px solid var(--text-gold);
+    .menu-navbar ul li{
+        display: flex;
+        margin: auto 0 !important;
     }
-    .menu-navbar ul li div{
-        border: none !important;
+    .menu-navbar ul .nav-link:hover{
+        border-bottom: 2px solid var(--text-gold);
+    }
+    .menu-navbar ul #informasi:hover{
+        border-bottom: 2px solid var(--text-gold);
     }
     .menu-navbar ul li div #btn-sublist{
         display: none;
+    }
+
+    /* ppdb */
+    #hero-carousel{
+        position: relative;
+    }
+    #ppdb{
+        width: 50rem;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        position: absolute;
+        top: -500px;
+        justify-content: center;
+        right: 0 !important;
+        left: 0 !important;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    #ppdb h3{
+        color: var(--custom);
+        font-weight: 600;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    .text-ppdb{
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .btn-ppdb{
+        background: var(--custom);
+        padding: 10px 15px;
+        color: #fff;
+    }
+    .btn-ppdb:hover{
+        background-color: var(--text-gold);
+        color: var(--custom);
+        font-weight: 600;
     }
 }
